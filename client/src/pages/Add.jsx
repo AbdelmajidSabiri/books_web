@@ -9,7 +9,7 @@ const Add = () => {
         title : "",
         desc : "",
         cover : "",
-        book_path : "",
+        price : "",
 
     });
 
@@ -49,9 +49,9 @@ const Add = () => {
                 onChange={handleChange}
             />
             <input
-                type="text"
-                placeholder="Book file"
-                name="Book file"
+                type="number"
+                placeholder="Book price"
+                name="price"
                 onChange={handleChange}
             />
             <input
@@ -60,7 +60,7 @@ const Add = () => {
                 name="cover"
                 onChange={handleChange}
             />
-            <button onClick={handleClick}>Add</button>
+            <button onClick={handleClick} className="formButton">Add</button>
             {error && "Something went wrong!"}
             <Link to="/">See all books</Link>
         </div>
