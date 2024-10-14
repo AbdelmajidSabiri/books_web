@@ -34,7 +34,7 @@ const Books = () => {
                         {book.cover && <img src = {book.cover}/>}
                         <h2>{book.title}</h2>
                         <p>{book.desc}</p> 
-                        <span>{book.price}</span>
+                        <span>{book.book_path}</span>
                     </div>
                 ))}
             </div>
